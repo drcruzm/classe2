@@ -1,0 +1,36 @@
+Clase 2
+================
+
+## GitHub Documents
+
+This is an R Markdown format used for publishing markdown documents to
+GitHub. When you click the **Knit** button all R code chunks are run and
+a markdown file (.md) suitable for publishing to GitHub is generated.
+
+``` r
+library(ggplot2)
+data(mpg)
+# View(mpg) #leyendo datos
+attach(mpg)
+str(mpg)
+```
+
+    ## tibble [234 x 11] (S3: tbl_df/tbl/data.frame)
+    ##  $ manufacturer: chr [1:234] "audi" "audi" "audi" "audi" ...
+    ##  $ model       : chr [1:234] "a4" "a4" "a4" "a4" ...
+    ##  $ displ       : num [1:234] 1.8 1.8 2 2 2.8 2.8 3.1 1.8 1.8 2 ...
+    ##  $ year        : int [1:234] 1999 1999 2008 2008 1999 1999 2008 1999 1999 2008 ...
+    ##  $ cyl         : int [1:234] 4 4 4 4 6 6 6 4 4 4 ...
+    ##  $ trans       : chr [1:234] "auto(l5)" "manual(m5)" "manual(m6)" "auto(av)" ...
+    ##  $ drv         : chr [1:234] "f" "f" "f" "f" ...
+    ##  $ cty         : int [1:234] 18 21 20 21 16 18 18 18 16 20 ...
+    ##  $ hwy         : int [1:234] 29 29 31 30 26 26 27 26 25 28 ...
+    ##  $ fl          : chr [1:234] "p" "p" "p" "p" ...
+    ##  $ class       : chr [1:234] "compact" "compact" "compact" "compact" ...
+
+``` r
+p <- ggplot(data = mpg) # PASO 1
+p + geom_point(aes(x=displ,y=hwy))
+```
+
+![](README_files/figure-gfm/pressure-1.png)<!-- -->
