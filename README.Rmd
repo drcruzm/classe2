@@ -13,17 +13,14 @@ knitr::opts_chunk$set(echo = TRUE)
 This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
 
 
-```{r cars}
-library(ggplot2)
-data(mpg)
-# View(mpg) #leyendo datos
-attach(mpg)
-str(mpg)
+```{r data}
+clientes <- read.csv("~/AMV-21/Clase 2/classe2/clientes.csv")
+View(clientes)
+
 ```
 
 ```{r pressure}
-p <- ggplot(data = mpg) # PASO 1
-p + geom_point(aes(x=displ,y=hwy))
+
 ```
 
 
