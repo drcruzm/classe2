@@ -3,24 +3,51 @@ title: "Clase 2"
 output: github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+## Instalando la libreria 
 
+```{r}
+#install.packages("UsingR")
 ```
 
-## GitHub Documents
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
-
-
-```{r data}
-clientes <- read.csv("~/AMV-21/Clase 2/classe2/clientes.csv")
-View(clientes)
-
+```{r}
+library(UsingR)
+library(dplyr)
 ```
 
-```{r pressure}
+## Leyendo los datos
 
+```{r}
+data("nym.2002")
+head(nym.2002)
 ```
+
+
+```{r}
+mean(nym.2002$age)
+hist(nym.2002)
+```
+
+
+```{r}
+hist(nym.2002$age, col="lightblue", main = "Edades Maraton", xlab = "Edades", freq = TRUE, labels = TRUE)
+abline(v= mean(nym.2002$age), col='red')
+```
+
+```{r}
+boxplot(nym.2002$age)
+```
+
+```{r}
+muje <- filter(nym.2002, gender =="Female" )
+```
+
+
+```{r}
+boxplot(muje$time)
+```
+
+
+
 
 
