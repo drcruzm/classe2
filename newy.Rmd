@@ -1,0 +1,24 @@
+---
+title: "Aprender a usar los Data Frames"
+output: html_notebook
+---
+
+```{r}
+# install.packages("UsingR")
+```
+
+## Llamado de Librerias
+
+```{r}
+library(UsingR)
+library(DataExplorer)
+
+```
+
+```{r}
+mean(nym.2002$time)
+hist(nym.2002$time)
+abline(v=mean(nym.2002$time), col="red")
+```
+
+

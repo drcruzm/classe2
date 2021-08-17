@@ -6,13 +6,17 @@ output: github_document
 ## Instalando la libreria 
 
 ```{r}
-#install.packages("UsingR")
+# install.packages("UsingR")
+# install.packages("DataExplorer")
+
 ```
 
+## Llamado de Librerias
 
 ```{r}
 library(UsingR)
-library(dplyr)
+library(DataExplorer)
+
 ```
 
 ## Leyendo los datos
@@ -22,30 +26,60 @@ data("nym.2002")
 head(nym.2002)
 ```
 
+## Estadistica Descriptiva
 
 ```{r}
 mean(nym.2002$age)
 hist(nym.2002)
 ```
 
+## Customizando el Histograma
 
 ```{r}
 hist(nym.2002$age, col="lightblue", main = "Edades Maraton", xlab = "Edades", freq = TRUE, labels = TRUE)
 abline(v= mean(nym.2002$age), col='red')
 ```
 
-```{r}
-boxplot(nym.2002$age)
-```
-
-```{r}
-muje <- filter(nym.2002, gender =="Female" )
-```
+## Libreria Data Explorer
 
 
-```{r}
-boxplot(muje$time)
+```{r Data Explorer}
+# create_report(nym.2002)
+
 ```
+
+
+```{r Data Explorer 2}
+plot_bar(nym.2002)
+```
+
+
+```{r Data Explorer 3}
+plot_histogram(nym.2002)
+```
+
+
+```{r Data Explorer 4}
+plot_histogram(nym.2002$time)
+```
+
+
+```{r Data Explorer 5}
+plot_density(nym.2002)
+```
+
+
+```{r Data Explorer 6}
+plot_boxplot(nym.2002, by = "age")
+```
+
+
+```{r Data Explorer 7}
+plot_boxplot(nym.2002, by = "time")
+```
+
+
+
 
 
 
