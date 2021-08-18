@@ -11,22 +11,14 @@ Clase 2
 ## Llamado de Librerias
 
 ``` r
-library(UsingR)
+library(lattice)
+library(survival)
+library(Formula)
+library(ggplot2)
+library(MASS) 
+library(HistData)
+library(Hmisc)
 ```
-
-    Loading required package: MASS
-
-    Loading required package: HistData
-
-    Loading required package: Hmisc
-
-    Loading required package: lattice
-
-    Loading required package: survival
-
-    Loading required package: Formula
-
-    Loading required package: ggplot2
 
 
     Attaching package: 'Hmisc'
@@ -34,6 +26,10 @@ library(UsingR)
     The following objects are masked from 'package:base':
 
         format.pval, units
+
+``` r
+library(UsingR)
+```
 
 
     Attaching package: 'UsingR'
@@ -67,7 +63,7 @@ head(nym.2002)
 mean(nym.2002$age)
 ```
 
-    ## [1] 39.1
+    [1] 39.1
 
 ``` r
 hist(nym.2002)
@@ -98,8 +94,8 @@ abline(v= mean(nym.2002$age), col='red')
 plot_bar(nym.2002)
 ```
 
-    ## 1 columns ignored with more than 50 categories.
-    ## home: 73 categories
+    1 columns ignored with more than 50 categories.
+    home: 73 categories
 
 ![](README_files/figure-gfm/Data%20Explorer%202-1.png)<!-- -->
 

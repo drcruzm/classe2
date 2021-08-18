@@ -14,15 +14,15 @@ output: github_document
 ## Llamado de Librerias
 
 ```{r comment='', warning=FALSE }
-library(UsingR)
-library(DataExplorer)
-library(MASS) 
-library(HistData)
-library(Hmisc)
 library(lattice)
 library(survival)
 library(Formula)
 library(ggplot2)
+library(MASS) 
+library(HistData)
+library(Hmisc)
+library(UsingR)
+library(DataExplorer)
 ```
 
 ## Leyendo los datos
@@ -34,7 +34,7 @@ head(nym.2002)
 
 ## Estadistica Descriptiva
 
-```{r}
+```{r comment=''}
 mean(nym.2002$age)
 hist(nym.2002)
 ```
@@ -57,7 +57,7 @@ abline(v= mean(nym.2002$age), col='red')
 
 ## Grafica de Barras
 
-```{r Data Explorer 2}
+```{r Data Explorer 2, comment='',warning=FALSE}
 plot_bar(nym.2002)
 ```
 
