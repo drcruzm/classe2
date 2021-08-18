@@ -13,7 +13,7 @@ output: github_document
 
 ## Llamado de Librerias
 
-```{r}
+```{r comment='', warning=FALSE }
 library(UsingR)
 library(DataExplorer)
 
@@ -21,7 +21,7 @@ library(DataExplorer)
 
 ## Leyendo los datos
 
-```{r}
+```{r comment=''}
 data("nym.2002")
 head(nym.2002)
 ```
@@ -42,17 +42,20 @@ abline(v= mean(nym.2002$age), col='red')
 
 ## Libreria Data Explorer
 
+### Reporte
 
 ```{r Data Explorer}
 # create_report(nym.2002)
 
 ```
 
+## Grafica de Barras
 
 ```{r Data Explorer 2}
 plot_bar(nym.2002)
 ```
 
+## Histogramas
 
 ```{r Data Explorer 3}
 plot_histogram(nym.2002)
@@ -63,11 +66,13 @@ plot_histogram(nym.2002)
 plot_histogram(nym.2002$time)
 ```
 
+## Grafica de Densidad
 
 ```{r Data Explorer 5}
 plot_density(nym.2002)
 ```
 
+## Box plot
 
 ```{r Data Explorer 6}
 plot_boxplot(nym.2002, by = "age")
