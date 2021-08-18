@@ -16,7 +16,13 @@ output: github_document
 ```{r comment='', warning=FALSE }
 library(UsingR)
 library(DataExplorer)
-
+library(MASS) 
+library(HistData)
+library(Hmisc)
+library(lattice)
+library(survival)
+library(Formula)
+library(ggplot2)
 ```
 
 ## Leyendo los datos
