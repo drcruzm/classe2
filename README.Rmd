@@ -53,6 +53,7 @@ abline(v= mean(nym.2002$age), col='red')
 ```{r Data Explorer}
 # create_report(nym.2002)
 
+</report.html>
 ```
 
 ## Grafica de Barras
