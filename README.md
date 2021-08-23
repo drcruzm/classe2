@@ -1,7 +1,7 @@
 Clase 2
 ================
 
-*REGRESAR AL HOME* : [https://analisismultivariado.com/](https://analisismultivariado.com) 
+**REGRESAR AL HOME** : [https://analisismultivariado.com/](https://analisismultivariado.com) 
 
 ## Instalando la libreria
 
@@ -119,3 +119,5 @@ plot_boxplot(nym.2002, by = "time")
 ```
 
 ![](README_files/figure-gfm/Data%20Explorer%207-1.png)<!-- -->
+
+**REGRESAR AL HOME** : [https://analisismultivariado.com/](https://analisismultivariado.com) 
