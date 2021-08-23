@@ -1,6 +1,10 @@
 Clase 2
 ================
 
+*REGRESAR AL HOME: [https://analisismultivariado.com/](https://analisismultivariado.com) 
+
+
+
 ## Instalando la libreria
 
 ``` r
