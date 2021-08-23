@@ -1,9 +1,7 @@
 Clase 2
 ================
 
-*REGRESAR AL HOME: [https://analisismultivariado.com/](https://analisismultivariado.com) 
-
-
+*REGRESAR AL HOME* : [https://analisismultivariado.com/](https://analisismultivariado.com) 
 
 ## Instalando la libreria
 
@@ -24,25 +22,8 @@ library(HistData)
 library(Hmisc)
 ```
 
-
-    Attaching package: 'Hmisc'
-
-    The following objects are masked from 'package:base':
-
-        format.pval, units
-
 ``` r
 library(UsingR)
-```
-
-
-    Attaching package: 'UsingR'
-
-    The following object is masked from 'package:survival':
-
-        cancer
-
-``` r
 library(DataExplorer)
 ```
 
